@@ -1,0 +1,15 @@
+{
+  "name": "techstore",
+  "version": "1.0.0",
+  "description": "Web app that enables list, add, update and delete tech products as a user. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Express"
+  ],
+  "author": "Freider Achic-Cuenca <freider8998@gmail.com>",
+  "license": "ISC"
+}
