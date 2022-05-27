@@ -10,25 +10,38 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { useState } from 'react';
 
 function App() {
+  const [status,setStatus] = useState({authenticated:localStorage.getItem('logged')})
   return (
     <BrowserRouter>
-      <NavBar></NavBar>
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path="login" element={<Login></Login>}></Route>
-        <Route path='products' element={<ListCards></ListCards>}></Route>
-        <Route path='add' element={<AddProduct></AddProduct>}></Route>
-        <Route
-          path="*"
-          element={
-            <main style={{ padding: "1rem" }}>
-              <p>There's nothing here!</p>
-            </main>
-          }
+      {status.authenticated?
+        <div>
+        <NavBar setStatus={setStatus}></NavBar>
+        <Routes>
+          <Route path='/' element={<Home></Home>}></Route>
+          <Route path="login" element={<Login setStatus={setStatus} ></Login>}></Route>
+          <Route path='products' element={<ListCards></ListCards>}></Route>
+          <Route path='add' element={<AddProduct></AddProduct>}></Route>
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
         />
-      </Routes>
+        </Routes>
+        </div>
+        :
+        <div>
+        <Login setStatus={setStatus}></Login>
+        <Routes>
+          <Route path="login" element={<Login setStatus={setStatus}></Login>}></Route>
+        </Routes>
+        </div>
+      }
     </BrowserRouter>
   );
 }

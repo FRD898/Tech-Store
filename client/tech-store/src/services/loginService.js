@@ -1,15 +1,20 @@
 import axios from "axios";
-export default function userLogin(user){
-    const baseURL = "http://localhost:8000/"
-    axios.post(baseURL,{
-        title: "LoginUser",
-        body: user
-    })
+export default async function userLogin(user){
+    const baseURL = "http://localhost:5000/login"
+    var res;
+    await axios.post(baseURL,user)
     .then((response)=>{
-        return response;
+        //console.log("service",response.data)
+        if(response.status == 200){
+            res = true
+        }else{
+            res=false
+        }
     })
     .catch((error)=>{
         console.error(error);
-        return null;
+        res = false;
     })
+    //console.log("..",res);
+    return res;
 }
