@@ -4,7 +4,9 @@
   "description": "Web app that enables list, add, update and delete tech products as a user. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "node ./server/src/index.js",
+    "start-client": "cd ./client/tech-store && npm start"
   },
   "keywords": [
     "React",
