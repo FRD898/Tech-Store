@@ -10,7 +10,7 @@ function Login(props){
 
     const StyledContainer = styled.div`
         padding: 100px;
-        background: #000000;
+        background: #474747;
         height: 100vh;
         margin:0;
         padding: 0;
@@ -21,10 +21,10 @@ function Login(props){
     `;
     const StyledForm = styled.form`
         height: 300px;
-        width: 400px;
-        border: 2px solid #C4CA00;
+        width: 300px;
+        border: 2px solid #D5E59C;
         border-radius: 12px;
-        background: #5EFC9C;
+        background: #198152;
         display:flex;
         flex-direction: column;
         align-items: center;
