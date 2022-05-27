@@ -25,6 +25,7 @@ export default function Card(props){
         display:flex;
         flex-direction:column;
         color: white;
+        align-items: center;
     `;
     return(
         <StyledCardContainer>

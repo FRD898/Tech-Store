@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import {COLORS} from '../constants'
 
 function Login(props){
     const StyledTittle = styled.h1`
@@ -10,7 +10,7 @@ function Login(props){
 
     const StyledContainer = styled.div`
         padding: 100px;
-        background: #474747;
+        background: ${COLORS.background};
         height: 100vh;
         margin:0;
         padding: 0;
@@ -22,9 +22,9 @@ function Login(props){
     const StyledForm = styled.form`
         height: 300px;
         width: 300px;
-        border: 2px solid #D5E59C;
+        border: 2px solid ${COLORS.secondary};
         border-radius: 12px;
-        background: #198152;
+        background: ${COLORS.primary};
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -50,7 +50,8 @@ function Login(props){
     const StyledButton = styled.button`
     border: green 13px;
     border-radius: 3px;
-    background: skyblue;
+    background: ${COLORS.secondary};
+    cursor:pointer;
     `;
     const StyledLink = styled.a`
         font-color: red;

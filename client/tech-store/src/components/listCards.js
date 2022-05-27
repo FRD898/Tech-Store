@@ -11,14 +11,17 @@ export default function ListCards(props){
         column-gap: 12px;
         row-gap: 12px;
         height: 100vh;
+        padding: 60px 0px;
     `;
     const StyledButton = styled.button`
         cursor:pointer;
-        border: 3px ${COLORS.secondary};
+        border-color: ${COLORS.secondary};
         border-radius: 50%;
     `;
     const StyledOptions = styled.div`
         margin-top: 10px;
+        display: flex;
+        justify-content: center;
     `;
     const initial_cards = [{
         id: "1232131",
