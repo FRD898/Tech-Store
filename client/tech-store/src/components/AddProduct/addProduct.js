@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import {AddProductStyle as S} from "./addProductStyle";
+import { useNavigate } from "react-router-dom";
 import { addProduct } from "../../services/productService";
 
 export default function AddProduct(props){
+    let navigate = useNavigate();
     const [product,setProduct] = useState({
         name: "",
         price: "",
@@ -23,6 +25,7 @@ export default function AddProduct(props){
         addProduct(product).then((res)=>{
             if (res=='ok'){
                 console.log("product Added")
+                navigate("/products");
             }
         }).catch((e)=>{
             console.error(e);

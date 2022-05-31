@@ -40,6 +40,7 @@ const removeProduct = (req,  res, next)=>{
 
 const addProduct = (req, res, next)=>{
     product = req.body.product;
+    product.id = Math.round(Math.random()*1000000);
     console.log(`request add product ${JSON.stringify(product)}`)
     products.push(product)
     res.status(200).json('Product added')
