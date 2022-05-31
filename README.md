@@ -1,15 +1,17 @@
 ## Installing
+git clone https://github.com/FRD898/Tech-Store.git
+cd Tech-Store/
 
 ### Server
 
-Enter to /client/tech-store and execute:
+Enter to client/tech-store folder and execute:
 
 ```shell
 npm install
 ```
 ### Client
 
-Enter to /server and execute:
+Enter to server/ folder and execute:
 
 ```shell
 npm install
@@ -18,7 +20,7 @@ npm install
 ## Executing
 After installing all dependencies you will be able to execute:
 
-Enter to the root file and execute:
+Enter to the root file Tech-Store/ and execute:
 
 ### Server
 ```shell
@@ -28,4 +30,7 @@ npm run start-server
 ```shell
 npm run start-client
 ```
+User credentials for testing: 
+* email: freider8998@gmail.com
+* password: admin 
 
