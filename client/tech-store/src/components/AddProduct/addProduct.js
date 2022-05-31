@@ -37,16 +37,16 @@ export default function AddProduct(props){
             <S.StyledForm onSubmit={handleAddProduct}>
                 <h1>Add Product</h1>
                 <S.StyledLabelInput>
-                    <S.StyledLabel for="name">Product Name</S.StyledLabel>
+                    <S.StyledLabel htmlFor="name">Product Name</S.StyledLabel>
                     <S.StyledInput type="text" id="name" value={product.name} onChange={handleChange}></S.StyledInput>
-                    <S.StyledLabel for="price">Price</S.StyledLabel>
+                    <S.StyledLabel htmlFor="price">Price</S.StyledLabel>
                     <S.StyledInput type="number" id="price" value={product.price} onChange={handleChange}></S.StyledInput>
-                    <S.StyledLabel for="image">Image(URL)</S.StyledLabel>
+                    <S.StyledLabel htmlFor="image">Image(URL)</S.StyledLabel>
                     <S.StyledInput type="text" id="image" value={product.image} onChange={handleChange}></S.StyledInput>
                 </S.StyledLabelInput>
                 <S.StyledButton>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         save
                     </span>
                 </S.StyledButton>

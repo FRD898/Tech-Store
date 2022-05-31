@@ -15,6 +15,7 @@ function Login(props){
         e.preventDefault();
         userLogin(user).then((res)=>{
                 setStatus(res)
+                console.log(typeof(res))
                 localStorage.setItem('logged',res);
             }
         )
@@ -38,9 +39,9 @@ function Login(props){
             <L.StyledForm onSubmit={handleLogin}>
                 <h1>Login</h1>
                 <L.StyledLabelInput>
-                    <L.StyledLabel for="email">Email</L.StyledLabel>
+                    <L.StyledLabel htmlFor="email">Email</L.StyledLabel>
                     <L.StyledInput type="email" id="email" value={user.email} onChange={handleChange}></L.StyledInput>
-                    <L.StyledLabel for="password">Password</L.StyledLabel>
+                    <L.StyledLabel htmlFor="password">Password</L.StyledLabel>
                     <L.StyledInput type="password" id="password" value={user.password} onChange={handleChange}></L.StyledInput>
                     <span> <a href="/">Forgot password?</a> </span>
                 </L.StyledLabelInput>

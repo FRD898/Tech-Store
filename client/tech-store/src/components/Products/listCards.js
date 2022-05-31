@@ -32,7 +32,7 @@ export default function ListCards(props){
             <L.StyledOptions>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
                 <L.StyledButton onClick={(e)=>handleDelete(e,card.id)}>
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         delete
                     </span>
                 </L.StyledButton>

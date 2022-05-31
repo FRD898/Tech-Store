@@ -16,7 +16,7 @@ function App() {
   const [status,setStatus] = useState({authenticated:localStorage.getItem('logged')})
   return (
     <BrowserRouter>
-      {status.authenticated?
+      {status.authenticated!='false'?
         <div>
         <NavBar setStatus={setStatus}></NavBar>
         <Routes>
