@@ -1,5 +1,6 @@
 ## Installing
 git clone https://github.com/FRD898/Tech-Store.git
+
 cd Tech-Store/
 
 ### Server
