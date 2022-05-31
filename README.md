@@ -19,7 +19,7 @@ npm install
 ```
 
 ## Executing
-After installing all dependencies you will be able to execute:
+After installing all dependencies you will be able to start the application:
 
 Enter to the root file Tech-Store/ and execute:
 
