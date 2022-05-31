@@ -24,10 +24,12 @@ After installing all dependencies you will be able to execute:
 Enter to the root file Tech-Store/ and execute:
 
 ### Server
+In one terminal execute:
 ```shell
 npm run start-server
 ```
 ### Client
+On another terminal execute:
 ```shell
 npm run start-client
 ```
